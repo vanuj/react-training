@@ -1,0 +1,25 @@
+ /*  Write a function that calculates the prices after tax calculation for each 
+    price element in the prices array 
+    var prices = [1.1, 2.32, 3.68, 4.9]; 
+    result should be pricesWithTax Assume taxRate to be 0.07
+*/
+var prices = [1.1, 2.32, 3.68, 4.9];
+
+
+//Solution 1
+tax = (price,tax=0.07) => (price + (price * tax/100)).toFixed(3) ;
+priceWithTax = (prices) =>  prices.map((price) => tax(price))
+console.log(priceWithTax(prices))
+
+//Solution 2 (with currying)
+taxCalculate = (price,tax) => (price + (price * tax/100)).toFixed(3);
+calculatePriceWithTax = (price) => (tax) => taxCalculate(price,tax); 
+
+finalResult = (prices) => prices.map((price) => calculatePriceWithTax(price)(0.07))
+console.log(finalResult(prices))
+
+
+
+// add = (n, m) => n + m
+// wrapper = (a) => (b) => add(a,b)
+// console.log(wrapper(2)(5));
