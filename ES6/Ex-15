@@ -1,0 +1,7 @@
+/* Create an array that contains the last four characters of another array
+*/
+
+const array1 = [5,6,7,8,9];
+const result = [1,2,3,4,...array1.slice(array1.length-4)]
+
+console.log(result)
