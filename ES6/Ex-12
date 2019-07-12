@@ -1,0 +1,12 @@
+/*
+  Parse the day, month and year from the date (’2025-09-26’)
+  Use : destructuring
+*/
+
+parseDMY = (str) => {
+  const [day,month,year] = str.split('-');
+  console.log(day)
+  console.log(month)
+  console.log(year)
+}
+parseDMY('2025-09-26');
