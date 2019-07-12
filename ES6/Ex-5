@@ -1,0 +1,14 @@
+ /*  Create an mapper function using arrow symantics that 
+ returns an object having following attribute when operating on array
+ [{ isEven: false, number: 1, squared: 1 }, 
+ { isEven: true, number: 2, squared: 4 }, 
+ { isEven: false, number: 3, squared: 9 } ] 
+*/
+
+mapperFns = (number) => ({
+  isEven:number%2===0,
+  number: number,
+  squared: number*number
+});
+
+console.log([1,2,3].map(mapperFns)); 
