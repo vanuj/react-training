@@ -1,0 +1,11 @@
+/*
+  Write a function that returns an array from a given string
+  wrap(“package”)  // result should be [“package”]
+
+*/
+
+wrap1 = (result) => console.log([result]) // Solution A, ['package']
+
+wrap2 = (result) => console.log([...result]) // Solution B ['p','a','c','k','a','g','e']
+
+wrap2('package');
