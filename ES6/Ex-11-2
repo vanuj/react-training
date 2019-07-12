@@ -1,0 +1,8 @@
+/*
+  Write a function that takes an array of string and returns plain string 
+  unwrap([“package”]) // result should be “package”
+*/
+
+unwrap = ([result]) =>result 
+
+console.log(unwrap(['package']))
