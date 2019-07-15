@@ -1,0 +1,11 @@
+/*
+   Define a function that concatenates several strings 
+   – Function should take a separator and list of arguments – Function should return list of arguments concatenated and separated by separator
+*/
+
+
+sampleFunction = (seperator, ...others) => {
+  console.log(others.join(seperator))
+};
+
+sampleFunction('>>>',1, 'param1', 'param2');
