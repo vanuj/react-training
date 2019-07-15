@@ -1,0 +1,11 @@
+/*
+  Create a 10 x 10 matrix of null values
+  null null null 
+*/
+
+//console.log(" null".repeat(10))
+
+
+console.log(
+  Array(10).fill(0).map(()=> ' null'.repeat(10))
+);
