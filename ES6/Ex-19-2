@@ -1,0 +1,19 @@
+/*
+  Create a factorial calculator
+*/
+
+//n*(n-1)
+
+factorial = (n) => n===1?1:n*factorial(n-1)
+
+console.log(factorial(6))
+
+function factorialqwe(n){
+  if(n === 1){
+    return 1;
+  }else{
+  return n*factorialqwe(n-1);
+  }
+}
+
+console.log(factorialqwe(4));
