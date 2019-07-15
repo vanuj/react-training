@@ -6,5 +6,5 @@
 
 let x = { A:['t','e','s','t'] };
 
-const {A:[t,result]} = x;
+const {A:[,,result]} = x;
 console.log(result)
